@@ -25,3 +25,15 @@ body {
 .number {
     float: right;
 }
+
+#reversebtn, #uniquebtn{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+}
+
+#reverseString, #UniqueArr{
+border: 1px solid black;
+width: auto;
+height: auto;
+}

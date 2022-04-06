@@ -1,12 +1,9 @@
-import './App.css';
-import A from './session-3';
+import "./App.css";
+import Test from "./Test";
+
 
 function App() {
-  return (
-    <div className="App">
-      <A />
-    </div>
-  );
+  return <Test />
 }
 
 export default App;
