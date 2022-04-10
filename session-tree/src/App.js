@@ -1,9 +1,8 @@
 import "./App.css";
-import TrafficLight from "./session-5";
-
+import Test from "./session-10/Test";
 
 function App() {
-  return <TrafficLight />
+  return <Test />
 }
 
 export default App;
