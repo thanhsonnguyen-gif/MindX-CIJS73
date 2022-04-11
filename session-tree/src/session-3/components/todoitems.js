@@ -1,10 +1,12 @@
 const TodoItems = (props) => {
-    const { todoItems } = props;
+    const { toDoItems } = props;
 
     return (<>
         {
-            todoItems.map((item) => {
-                return <input style={{type:'checkbox'}}><TodoItem value={item.value} done={item.done}/></input>
+            toDoItems.map((item) => {
+                return <div style={{display: 'flex'}}>
+                <input type='checkbox'/><TodoItem value={item.value} done={item.done}/>
+                </div>
             })
         }
     </>)
@@ -18,3 +20,21 @@ const TodoItem = (props) => {
 }
 
 export default TodoItems;
+
+// const TodoItems = (props) => {
+//     const {toDoItems} = props;
+//     return(
+//         toDoItems.map((item) => {
+//             return <div style={{display: 'flex'}}>
+//             <input type="checkbox"/>
+//             <ToDoItem value={item.value} id={item.id}/>
+//             </div>
+//         })
+//     )
+// }
+// export default TodoItems;
+
+// const ToDoItem = (props) => {
+//     const {value} = props;
+//     return <div style={{color: 'green'}}>{value}</div>;
+// }
