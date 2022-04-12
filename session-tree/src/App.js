@@ -1,8 +1,8 @@
 import "./App.css";
-import ToDoListApp from './session-3/session-3'
+import ExpenseApp from './assignment-1/assignment-1'
 
 function App() {
-  return <ToDoListApp />
+  return <ExpenseApp />
 }
 
 export default App;

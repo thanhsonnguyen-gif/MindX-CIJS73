@@ -1,32 +1,32 @@
-import './App.css';
+import "./assignment-1.css";
+import AddExpense from "./AddExpenseSession/addExpense";
+import Detail from "./Detailsession/Detail";
+import {useState} from 'react'
 
-function App() {
+const ExpenseApp = () => {
+
+  const [expense, setExpense] = useState([
+    {
+      name: 'some book',
+      amount: 50,
+      date: '2022-04-11'
+    }
+  ])
+
+  const handleAddNewExpense = (NewExpense) => {
+    console.log(NewExpense);
+    setExpense ([
+      ...expense,
+      NewExpense,
+    ])
+  }
+
   return (
-    <div className="App">
-      <div>
-        <div><button>addNewExpense
-          </button></div>
-      </div>
-      <form>
-        <div>inputItems</div>
-        <div><button>ADD</button></div>
-        <div><button>CANCEL</button></div>
-      </form>
-      <div>
-        <div>
-          <form>
-            <input>selectYears</input>
-          </form>
-        </div>
-        <div>
-          <div>mapItems</div>
-        </div>
-        <div>
-          <div>Items</div>
-        </div>
-      </div>
-    </div>
+    <>
+      <AddExpense onAddNewExpenseInfo={handleAddNewExpense}/>
+      <Detail Expenses={expense}/>
+    </>
   );
-}
+};
 
-export default App;
+export default ExpenseApp;

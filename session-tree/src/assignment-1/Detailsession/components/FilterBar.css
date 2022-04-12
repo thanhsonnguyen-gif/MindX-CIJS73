@@ -1,0 +1,18 @@
+.filterBar-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.filterBar-outer{
+    width: 40px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.filterBar-inner{
+    width: 100%;
+    background-color:blue;
+}

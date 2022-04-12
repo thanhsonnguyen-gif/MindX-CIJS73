@@ -1,11 +1,15 @@
+import { useState } from "react";
+
 const TodoItems = (props) => {
     const { toDoItems } = props;
-
+    const handleChecked = () => {
+        const [checked, setChecked] = useState({toDoItems})
+    }
     return (<>
         {
             toDoItems.map((item) => {
                 return <div style={{display: 'flex'}}>
-                <input type='checkbox'/><TodoItem value={item.value} done={item.done}/>
+                <input onChange={handleChecked} type='checkbox'/><TodoItem value={item.value} done={item.done}/>
                 </div>
             })
         }
