@@ -35,7 +35,7 @@ const MonthStatistic = (props) => {
   return (
     <div style={{ display: "flex" }}>
       {monthNames.map((month, idx) => {
-        <FilterBar label={month} percenstage={getMonthPercentage(idx + 1)} />;
+        return <FilterBar label={month} percenstage={getMonthPercentage(idx + 1)} />;
       })}
     </div>
   );

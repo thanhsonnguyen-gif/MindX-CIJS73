@@ -1,8 +1,8 @@
 import "./App.css";
-import Session_8 from './session-8/session-8'
+import ExpenseApp from './assignment-1/assignment-1'
 
 function App() {
-  return <Session_8 />
+  return <ExpenseApp />
 }
 
 export default App;
